@@ -8,7 +8,7 @@ fn main() {
     for _ in 0..cpus - 1 {
         std::thread::spawn(omoishori);
     }
-    
+
     std::thread::sleep(std::time::Duration::MAX);
 }
 
