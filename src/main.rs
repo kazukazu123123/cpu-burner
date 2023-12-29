@@ -15,6 +15,8 @@ fn main() {
 fn omoishori() {
     let mut rng = rand::rngs::StdRng::from_seed(*b"kazukazu123123____kazukazu123123");
     loop {
-        let _: u128 = rng.gen();
+        for _ in 0..=1000000 {
+            let _: u128 = rng.gen();
+        }
     }
 }
